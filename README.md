@@ -1,0 +1,2 @@
+# notes
+all learning notes
