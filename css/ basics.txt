@@ -1,0 +1,30 @@
+selector{
+  property:value;//declaration
+}
+
+tagName=>
+h1{}
+.className{}
+#id{}
+
+every thing selector=> *{}
+
+multiple selector combination:
+div.className => selects div tags that have a class of className
+div.className#idName=> same as previous plus must have idName ID. 
+div.className1.className2#idName=> tag and id can be used only once, className can be used more than once.
+div.className1.className2#idName,span=> here a comma (,) is act as or.
+
+
+div p => select all direct or indirect p tags those are children of div tag 
+<div>
+  <p>p1</p>
+  <h1>
+    <p>p2</p>
+  </h1>
+  <p>p3</p>
+</div>
+div p => will select all p tags, because all p are direct or indirect children of div.
+
+
+div.className p.red => selects all p.red under div.className
