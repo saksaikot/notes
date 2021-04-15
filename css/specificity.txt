@@ -1,0 +1,6 @@
+specificity
+
+
+
+!important,#id,.class,tag
+then order of appearance 

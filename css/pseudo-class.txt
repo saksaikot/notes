@@ -1,0 +1,8 @@
+.class:hover{
+
+}
+
+:focus{ }
+:disabled{}
+
+<input disabled/>
