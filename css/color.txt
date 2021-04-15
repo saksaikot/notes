@@ -1,0 +1,12 @@
+{color:value}
+color name,
+rgb value, 
+red,green,blue
+0-255,0-255,0-255
+red,green,blue,alpha
+alpha 0 to 1
+0 means full transparent, 1 is full opacity which mean no transparent
+
+there is another way
+hue,saturation,light,alpha
+0-360,0-100,0-100

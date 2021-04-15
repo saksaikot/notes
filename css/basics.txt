@@ -28,3 +28,7 @@ div p => will select all p tags, because all p are direct or indirect children o
 
 
 div.className p.red => selects all p.red under div.className
+
+{
+  text-decoration-line: line-through / underline
+}
