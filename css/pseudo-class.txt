@@ -4,5 +4,22 @@
 
 :focus{ }
 :disabled{}
+:required{}
 
-<input disabled/>
+// these are based on container or a parent element
+:first-child{}
+:last-child{}
+span:first-child{}// span needs to be first child
+:first-of-type{} // select first of that type
+:last-of-type{}
+:nth-child(2)// select second child
+:nth-child(even)
+:nth-child(odd)
+::nth-child(2n)
+:nth-child(2n+1)
+
+:nth-last-child(2)//same as nth-child but in reverse order
+
+:nth-first-of-type,nth-last-of-type
+
+<input disabled required/>
