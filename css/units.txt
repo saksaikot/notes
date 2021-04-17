@@ -1,0 +1,8 @@
+1px takes exactly 1 px 
+1rem is equal to root font size which is 16 px,
+% is calculated from its parent, 50% width means element width will be 50% of its parent element.
+
+1em is 100% of its parent, em is same as % depends on its parent
+
+100vh// view height full height of page
+100vw// view width full width of page
