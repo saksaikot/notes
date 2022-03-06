@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #777;
+}
+.modal {
+  height: 80vh;
+  background-color: white;
+  width: 900px;
+  max-width: 80%;
+  /* overflow: auto; */
+  flex-direction: column;
+  border-radius: 8px;
+  display: flex;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem 0.5rem 1rem;
+  border-bottom: 1px solid #777;
+}
+.modal-title {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.modal-close {
+  align-self: flex-start;
+  font-size: 1.5rem;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 1rem;
+}
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  border-top: 1px solid #777;
+}
+.btn {
+  margin-right: 0.5rem;
+  font-size: inherit;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  background: #777;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+.btn-primary {
+  background-color: #1ca;
+}
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: #0b9;
+}
+.btn-danger {
+  background-color: #c33;
+}
+.btn-danger:focus,
+.btn-danger:hover {
+  background-color: #b22;
+}

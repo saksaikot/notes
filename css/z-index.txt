@@ -1,0 +1,16 @@
+default z-index is 0
+z-index value can be - to +
+
+z-index will be affected for whole element means to its parent element
+
+parent
+ parent1,z-index:2
+  child1:z-index:30
+ parent2:z-index:10
+  child2:z-index:2
+
+here 
+ whole parent2 will be on top of parent1 ,
+ child1 will not be on top most layer
+ because of stack
+ 

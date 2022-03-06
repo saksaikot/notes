@@ -1,0 +1,15 @@
+:root {
+  --primary-color: red;
+}
+
+h2 {
+  --spacer: 10;
+  margin: calc(var(--spacer) * 1px);
+  margin: calc(10px +2px);
+  /* when + or - all values need a type of unit,
+  unit type can be mixed like 10% + 2px ,
+  while  * or / at least one units need to specify unit
+  */
+}
+p {
+}

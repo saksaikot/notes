@@ -1,0 +1,13 @@
+default overflow:visible
+
+overflow-x for x axis
+overflow-y for y axis
+shorthand
+overflow
+values:
+visible: will visible overflow content,will get mixed with other elements
+
+hidden:dont show any overflow content
+scroll:always scroll bar
+
+auto:only scrollbar if x axis or y axis have overflow content

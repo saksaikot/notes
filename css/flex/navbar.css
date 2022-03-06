@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.header {
+  background-color: rgb(106, 159, 177);
+}
+.brand {
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+}
+.menu .link {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(100, 150, 170);
+  margin: 0;
+}
+
+.menu .link:hover {
+  background-color: rgb(106, 159, 177);
+}

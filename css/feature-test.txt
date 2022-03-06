@@ -1,0 +1,19 @@
+we can check if a specific feature is available in the browser, if not we can give a fallback css.
+
+the revert property of background color is available in firefox but not in chrome
+so we can check like this
+
+@supports (background-color:revert){
+  .div{
+    background-color:revert;
+  }
+}
+
+or like this as fallback
+@supports not (background-color:revert){
+  .div{
+    background-color:transparent;
+  }
+}
+
+we can also check with 'and' and 'or'

@@ -1,0 +1,33 @@
+syntex
+animation:animation-name duration timing-function delay fill-mode animation-count alternate
+
+fill-mode:3
+forwards state stays at 100%
+
+backwards: immediate start at 0% state then delay then 100% then back to original state
+
+both: first backward then forwards
+
+animation count: 1 to infinite 
+
+if animation count is more then 1 then another property can be used.
+alternate is 0 to 100 then 100 to 0 percent
+
+
+2.
+animation-play-state:running/paused
+3. 0%/from
+100%/to
+
+4. animation-name: animation-1,animation-2
+
+5.
+animation-name
+animation-duration
+animation-timing-function
+
+animation-direction:alternate
+animation-iteration-count:infinite 
+
+6.handling size , height , width with animation is not efficient .
+we need  to use transform.

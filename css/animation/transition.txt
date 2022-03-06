@@ -1,0 +1,12 @@
+
+
+transition:
+transition-property(all/color,background-color/color) 
+transition-duration(1s/.5s)  transition-timing-function(linear/ease-in/ease-out /cubic-bezier(1, 2.65, 0.45,-1.29)) 
+transition-delay(1s/.5s)
+
+
+shortHand:
+transition-property transition-duration transition-timing-function transition-delay
+or all can be set separately
+

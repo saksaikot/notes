@@ -1,0 +1,14 @@
+position:static,relative,absolute,fixed,sticky
+
+
+if you want to move an element within its container then container needs to be set relative or absolute.
+
+just relative: element takes default place but can be moved by top,bottom,left,right property
+
+position absolute:
+removes from document flow,
+takes 1st place of container, top,bottom,left,right will be for its container
+
+position fixed : top,left,right,bottom container is view height and width,based on entire screen
+
+position sticky: same as absolute with element stays as same position, will take normal space or normal document flow,

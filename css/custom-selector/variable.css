@@ -1,0 +1,20 @@
+:root {
+  --primary-color: red;
+  /* --margin: 0;
+  --margin: 2rem; */
+}
+
+h2 {
+  color: white;
+  background-color: var(--primary-color);
+  padding: 1rem;
+
+  --margin: 20px;
+  /* we can override custom selector value */
+  margin: var(--margin, 10px);
+  /* if custome property is not defined then second value is a fallback value */
+}
+p {
+  color: var(--primary-color);
+  margin: var(--margin);
+}

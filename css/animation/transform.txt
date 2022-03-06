@@ -1,0 +1,30 @@
+transform have bunch of function to animate an element
+
+transform does not re-render the html structure just the element it intended for.
+
+1. scale(2);// scale x and y to times 2
+scale(1,2) scale x to 1 times and y to 2 times
+scaleX(1) scaleY(2) // same
+
+note: transform can process multiple functions but in order left to right
+
+2.rotate(90deg)
+rotate(.75turn)
+rotate(.65rad)
+
+3.translate://translate to move a content up/down or left or right
+(x-direction)
+(x-direction,y-direction)
+
+or translateX(1px) translateY(3px)
+
+translate(100%);// this 100% is the current element not its parent element.
+so 100% means move the element to right with 100% width of this element
+
+
+css variable cannot be used in animation like normally can do with css.
+
+we can use like this
+transform: scale(var(--scale))
+
+but not like: --scale:1.5

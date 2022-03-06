@@ -1,0 +1,18 @@
+div > span : select all first child or direct child
+div ~ span : select all span siblings after div tag
+div + span: select very first span sibling 
+p:not(.red): select every p tag that does not have class red
+
+p:not(.red):not(.blue): select every p tag that does not have a class .red or .blue
+input:not(:checked): select inputs those are not checked
+attribute selectors:
+
+input[type="text"]:select all inputs with type="text"
+
+input[type]:select all inputs with attribute type
+input[data-margin]: select all inputs with attribute data-margin.
+input[data*="st"]: match data attribute value with st anywhere
+= exact
+*= anywhere
+^= start with
+$=end with

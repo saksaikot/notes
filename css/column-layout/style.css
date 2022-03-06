@@ -1,0 +1,21 @@
+.article {
+  column-count: 2;
+  /* default is one */
+  column-gap: 2rem;
+  /* default 1rem */
+  column-rule: 1px solid black;
+  /* make a line between column 
+  does not move content
+  */
+  column-width: 120px;
+  /* depends on other property 
+  like if column-count is 2 then there will be only two column*/
+  column-fill: balance;
+  /* balance or auto */
+  /* auto does not balance all column , it sort top to bottom, left to right */
+}
+h2 {
+  column-span: all;
+  /* takes space from all column */
+  /* values all/none default is none */
+}

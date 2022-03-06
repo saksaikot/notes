@@ -1,0 +1,24 @@
+to use montserrat font
+
+1.use the google font link styles
+
+use it in css
+body{
+  font-family:montserrat;
+  font-weight:normal;
+}
+
+to use local font:
+@font-face{
+  font-family:montserrat;// this can be given any name;
+  src:
+    url('fonts/montserrat-regular.waff2') format("waff2"),
+    url('fonts/montserrat-regular.waff') format("waff");
+  font-weight:normal;
+  font-style:normal;
+
+  font-display:block/ swap;
+  block means text will not display until fonts load
+  swap means text will display with fallback fonts before loading the font
+
+}

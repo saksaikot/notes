@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height:300vh
+}
+
+.container1 {
+  position: relative;
+  background-color: burlywood;
+  padding: 20px
+}
+.item1 {
+  position: absolute;
+  bottom: 10;
+  height: 100px;
+  background-color: rgb(219, 45, 22);
+}
+
+.item2 {
+  position: relative;
+  left: 30px;
+  height: 100px;
+  background-color: rgb(16, 231, 131);
+}
+.item3 {
+  position: relative;
+  left: 60px;
+  top:30
+  height: 100px;
+  background-color: rgb(23, 231, 16);
+}

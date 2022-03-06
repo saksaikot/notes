@@ -1,0 +1,40 @@
+.div1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  color: white;
+}
+
+.div1:hover {
+  animation: move 1s linear 0s both infinite alternate;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: black;
+    color: white;
+  }
+  25% {
+    font-size: 2rem;
+  }
+  50% {
+    font-size: 3rem;
+  }
+  75% {
+    font-size: 3rem;
+  }
+  to {
+    color: black;
+    background-color: blue;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translate(100%);
+  }
+}

@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.item {
+  background-color: #777;
+  color: yellow;
+  border: 1px solid #333;
+}
+.container {
+  display: grid;
+  /* grid-template-columns: 100px 180px; */
+  /*grid-template-columns how many columns and width of the columns*/
+  /**/
+  /* grid-template-rows: 70px 300px; */
+  /* grid-template-rows : how many rows and rows height
+  
+  if no column define then it will work as normal div or tag*/
+  /*shorthand*/
+  grid-template: 300px 30px / 10px 200px;
+
+  grid-template-columns: 1fr 2fr 3fr;
+  /*unit can be define by fraction or ratio 
+  1fr 2fr means 1 will use 1/3 and other will  use 2/3 portion of space
+  */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(50px, auto);
+  /*can use with repeat function repeat(number-of-repeat,unit)
+  repeat can be used with mix value ie: 100px repeat(3,40px) 30px */
+
+  /* rows / columns */
+  grid-auto-rows: 100px;
+  /*grid-auto-rows default is auto means no height 
+  we can define grid-auto-rows when is not defined by grid-template-rows
+
+  multiple value can be use then it will be cycle through
+  ie:grid-auto-rows:100px 150px, 1st undefined row height will be 100px then 2nd row will be 150px then again 100px ......
+  */
+
+  grid-auto-flow: row;
+  grid-auto-flow: row dense;
+  /*grid-auto-flow: row dense will fill any empty space if there is any and if fill is possible*/
+  /*grid-auto-flow: default is row;
+  if row then new element added in row 
+  else column then added in column
+  row: 12,34,56
+  column:135,246
+  */
+  /* grid-template-areas:
+    "header header header"
+    "content sidebar ."
+    "footer footer footer"; */
+  /*grid-template-areas define names and layout which needs be declare in element css with grid-area 
+ie:grid-area:content
+here . is to replace any other element it needs to defined otherwise it will become invalid
+    */
+
+  row-gap: 5px;
+  column-gap: 10px;
+  gap: 5px 10px;
+
+  justify-content: center;
+  /* same as flex but need to use without flex 
+  ie: flex-start will be just start*/
+  align-content: center;
+  align-items: start;
+  align-items: stretch;
+  /*default is stretch*/
+  justify-items: end;
+
+  /*justify is horizontal
+  align is vertical
+  */
+}
+.item1 {
+  /* grid-area: sidebar; */
+  justify-self: end;
+  align-self: start;
+}
+.item2 {
+  /* grid-area: content; */
+}
+.item3 {
+  /* grid-area: header; */
+}
+.item4 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-row: 1 / 4;
+  /*1 count each line 
+  if there is 3 line or row then there will be 4 line
+  |a|b|c|
+  so here total 4 line
+  positive number start count from left
+  negative number start count from right
+  */
+  /*another value span 2
+  grid-row: span 2; will take 2 row space;
+  grid-row:1/-1; takes all row space
+   */
+
+  /* grid-column-start: 2;
+  grid-column-end: 4;
+  grid-column: 2/4; */
+}
+.item5 {
+  /* grid-area: footer; */
+}

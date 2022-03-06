@@ -1,0 +1,23 @@
+p::first-letter : select the first character of the text content of p
+
+p::first-letter{
+  font-size:200%
+}
+p::first-line{
+  background-color:red
+}
+
+p::after{
+  content:'i';
+  height:25px;
+  width:30px
+}
+p::before{
+   content:' u';
+}
+<p> love</p>
+result will be 'i love u'
+
+content value can be empty but must be define
+
+content: attr(data-text) // will take the value of data-text

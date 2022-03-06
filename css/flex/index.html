@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      border: 1px solid #333;
+      background-color: #777;
+      color: yellow;
+      margin: 10px;
+      width: 75px;
+    }
+
+    .container {
+      /*margins in flex does not merge with other element*/
+      display: flex;
+      /*flex/inline-flex same as block and inline block */
+      justify-content: space-around;
+      /* align in x axis justify-content*/
+      /* flex-start is default, other flex-end ,space-between, space-around,
+      left,right,center
+      */
+      align-items: stretch;
+      /* align in y axis align-items
+       stretch:try to take full parent height if child have no height specified
+       flex-start:top
+       flex-end:bottom
+       center:center
+       */
+      flex-wrap: wrap;
+      /*wrap content if there is no space, otherwise the content will be shrink */
+
+      /*if wrap have multiline content then we can use align-content like justify content
+      it will work with y axis
+      */
+
+      align-content: space-between;
+      /**/
+
+      flex-direction: row;
+      /*row :> default, left to right
+        column : top to bottom, justify-content will works here same as y-axis*/
+    }
+
+    .item1 {
+      min-height: 50px;
+      order: 2
+    }
+
+    .item2 {
+      height: 100px;
+      flex-grow: 4;
+
+
+      /* here grow will use any leftover space, and divided total flex-grow into total child's flex-grow parts like here total 5 parts 4 item2 and 1 item3 */
+
+      flex-basis: 0;
+      /*
+
+      flex-grow uses spaces with default width,but with flex-basis we can specify the starting width, for example if flex-basis is 0,  then it will
+      not add default width or it will calculate default width as 0, 
+      */
+
+      flex-shrink: 1;
+      /*flex-shrink is the default property if no flex-wrap:wrap is define
+      0 means no shrink, keep  original size,
+      1,2,3 ... will add all flex-shrinks and will shrinks child according to ratio specified
+      */
+      /* short hand:
+      flex:flex-grow,flex-shrink,flex-basis
+      */
+      flex: 3 0 auto;
+      align-self: flex-end;
+      /*align-self is like justify-content but for individual item*/
+      order: 3
+    }
+
+    .item3 {
+      height: 150px;
+      flex-grow: 1;
+      /* will take remaining spaces*/
+      order: 1
+        /* order can be -n to n,
+      default order is 0
+      */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+  </div>
+</body>
+
+</html>
