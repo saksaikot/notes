@@ -1,9 +1,0 @@
-margin of two  element collapse, side by side element share the margin 
-margins are calculated from the border and border of other element not with respect to margin of other element
-box-sizing:border-box;
-*,
-::after,
-::before{
-  box-sizing:border-box
-}
-border-width:top,right,bottom,left;

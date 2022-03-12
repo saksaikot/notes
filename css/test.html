@@ -1,0 +1,80 @@
+<html>
+
+<head>
+  <style>
+    .main {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .main>* {
+      margin: 1em;
+      font-size: 1.2em;
+      height: 20rem;
+    }
+
+    .paragraph {
+      width: 8em;
+      height: 5em;
+      border: dotted;
+    }
+
+    div.visible {
+      overflow: visible;
+    }
+
+    div.hidden {
+      overflow: hidden;
+    }
+
+    div.scroll {
+      overflow: scroll;
+    }
+
+    div.auto {
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div>
+      <code>visible</code>
+      <div class="paragraph visible">
+        Out of another, I get a lovely view of the bay and a little divrivate wharf belonging to the estate. There is a
+        beautiful shaded lane that
+        div
+      </div>
+    </div>
+    <div>
+      <code>hidden</code>
+      <div class="paragraph hidden">
+        Out of another, I get a lovely view of the bay and a little private wharf belonging to the estate. There is a
+        beautiful shaded lane that
+        div
+      </div>
+    </div>
+
+    <div>
+      <code>scroll</code>
+      <div class="paragraph scroll">
+        Out of another, I get a lovely view of the bay and a little private wharf belonging to the estate. There is
+        a
+        beautiful shaded lane that
+        div
+      </div>
+    </div>
+
+    <div>
+      <code>auto</code>
+      <div class="paragraph auto">
+        Out of another, I get a lovely view of the bay and a little private wharf belonging to the estate. There
+        is a
+        beautiful shaded lane that
+        div
+      </div>
+    </div>
+</body>
+
+</html>

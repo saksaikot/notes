@@ -1,2 +1,0 @@
-any thing that related to typography is inherited from its parent
-but form elements are not inherit , even typography is not inherit

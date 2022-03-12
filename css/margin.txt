@@ -1,5 +1,0 @@
-margin can be negative or auto,
-negative margin used for bringing element closer or overlap
-
-if there is a width defined of a element then margin auto can center the element
-giving same amount of margin to its left and right

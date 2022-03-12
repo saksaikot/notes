@@ -1,4 +1,0 @@
-single line //
-multi-line between /* and */
-
-vscode shortcut  ctrl+/ to comment select portion of code or focused line of code 

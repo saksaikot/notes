@@ -1,5 +1,0 @@
-div: display:block, content height and full parent width, no other elements can be on same line
-
-display:inline :> span , content height and width, height and width cannot be set, other elements can be on same line
-display:inline-block,:> button, works like inline but height, width can be set 
-display:none, removes from the flow

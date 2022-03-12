@@ -1,2 +1,0 @@
-normalize css is to set same styles for all available browsers,
-so that the styleseet for a site is consistent in all browsers.
